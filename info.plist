@@ -8,41 +8,11 @@
 	<string>Productivity</string>
 	<key>connections</key>
 	<dict>
-		<key>0A770BC1-803E-4F77-BB9A-A2367E91EE76</key>
+		<key>25A64920-19E4-446F-8755-77B44448D789</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>95704014-07CA-436D-B3AB-6D5966B8AC52</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>4F9F7B16-0875-49A6-9915-0D06800B80EB</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-			</dict>
-		</array>
-		<key>213EAC74-71DD-4DA9-85DD-233423DAF251</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>1915AF7A-CA7E-4C09-B382-7E7F8279944E</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-			</dict>
-		</array>
-		<key>29769EC1-6A4E-4346-9F8A-6F7F647D7382</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>4812DB82-A5C7-4FA5-919D-A351A678E683</string>
+				<string>64FC7EF8-ADF0-4824-823E-BE7AACB64082</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -60,33 +30,11 @@
 				<string></string>
 			</dict>
 		</array>
-		<key>4B38D33B-AA97-4409-ABD2-06BDE6A3F852</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>EF36A105-9F56-482F-9556-273FA354F081</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-			</dict>
-		</array>
 		<key>69298158-8F4E-4E8A-9F2B-B21CCC54EFE7</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>DBE92C7C-5827-43A5-ABEF-65662139DC58</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-			</dict>
-		</array>
-		<key>69AC44A5-37D7-4E15-9897-5C7D6EFF45A2</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>57649D9D-C599-4050-AFD3-63C97F46A471</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -104,33 +52,22 @@
 				<string></string>
 			</dict>
 		</array>
+		<key>74806920-4B07-482B-8505-BB9660DC20F9</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>64FC7EF8-ADF0-4824-823E-BE7AACB64082</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
 		<key>7B1D988B-B82F-437F-BF0F-53080138B073</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>6587B61E-D944-4F71-8A94-2AA1CD39D8D6</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-			</dict>
-		</array>
-		<key>7C8EBD27-D5BE-4CD5-93D9-AF64E75DEE15</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>9A45B3FD-9179-4F74-8CD5-5802114ADB04</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-			</dict>
-		</array>
-		<key>7F1FCDA8-0578-4D0B-AA22-56ABD12E7221</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>5881A7CF-4243-4D37-92BE-341FA6083802</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -159,11 +96,22 @@
 				<string></string>
 			</dict>
 		</array>
-		<key>C41C01AD-F724-4CB8-8278-31A35FE25482</key>
+		<key>A0B57A63-342E-4718-97F2-BB1E13009355</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>1EEDA452-8837-4B5B-921E-FF5EA6CBC7C7</string>
+				<string>64FC7EF8-ADF0-4824-823E-BE7AACB64082</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>A48D28FA-4B73-42B5-8985-30EBCCF25700</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>64FC7EF8-ADF0-4824-823E-BE7AACB64082</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -217,99 +165,83 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>command</key>
+				<key>argumenttype</key>
 				<integer>1</integer>
-				<key>confirm</key>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>keyword</key>
+				<string>q</string>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>script</key>
+				<string>#cat quick.xml
+python favorites.py
+</string>
+				<key>title</key>
+				<string>Quick Pomodoro</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
 				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.systemcommand</string>
+			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>95704014-07CA-436D-B3AB-6D5966B8AC52</string>
+			<string>A0B57A63-342E-4718-97F2-BB1E13009355</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>0</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
 				<key>escaping</key>
-				<integer>127</integer>
+				<integer>0</integer>
 				<key>script</key>
-				<string>tell application "iTunes" to stop
-tell application "Pomodoro" to start "散歩" duration 30</string>
+				<string>{query}</string>
 				<key>type</key>
 				<integer>6</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>4F9F7B16-0875-49A6-9915-0D06800B80EB</string>
+			<string>64FC7EF8-ADF0-4824-823E-BE7AACB64082</string>
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argument</key>
+				<string>tell application "Pomodoro" to start "料理 #家事" duration 60</string>
 				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>sanpo</string>
-				<key>subtext</key>
-				<string>天気がいから散歩しましょう</string>
-				<key>text</key>
-				<string>散歩</string>
-				<key>withspace</key>
+				<integer>3</integer>
+				<key>triggerid</key>
+				<string>料理</string>
+				<key>triggername</key>
+				<string>料理</string>
+				<key>workflowonly</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.remote</string>
+			<key>uid</key>
+			<string>A48D28FA-4B73-42B5-8985-30EBCCF25700</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
 				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>0A770BC1-803E-4F77-BB9A-A2367E91EE76</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>kurasu</string>
-				<key>subtext</key>
-				<string>桑港学園の従業</string>
-				<key>text</key>
-				<string>クラスに行く</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>213EAC74-71DD-4DA9-85DD-233423DAF251</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>escaping</key>
-				<integer>127</integer>
-				<key>script</key>
-				<string>tell application "Pomodoro" to start "クラス" duration 240
-tell application "iTunes" to stop</string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>1915AF7A-CA7E-4C09-B382-7E7F8279944E</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>escaping</key>
 				<integer>63</integer>
 				<key>script</key>
@@ -348,36 +280,40 @@ tell application "iTunes" to stop</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>escaping</key>
-				<integer>127</integer>
-				<key>script</key>
-				<string>tell application "Pomodoro" to start "残業" duration 25</string>
-				<key>type</key>
-				<integer>6</integer>
+				<key>argument</key>
+				<string>tell application "Pomodoro" to start "朝食 #家事" duration 25</string>
+				<key>argumenttype</key>
+				<integer>3</integer>
+				<key>triggerid</key>
+				<string>朝食</string>
+				<key>triggername</key>
+				<string>朝食</string>
+				<key>workflowonly</key>
+				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.script</string>
+			<string>alfred.workflow.trigger.remote</string>
 			<key>uid</key>
-			<string>4812DB82-A5C7-4FA5-919D-A351A678E683</string>
+			<string>25A64920-19E4-446F-8755-77B44448D789</string>
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>zangyou</string>
-				<key>text</key>
-				<string>もっと仕事</string>
-				<key>withspace</key>
+				<key>concurrently</key>
 				<false/>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>script</key>
+				<string>tell application "Pomodoro" to start "ワニカニ" duration 25</string>
+				<key>type</key>
+				<integer>6</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
+			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>29769EC1-6A4E-4346-9F8A-6F7F647D7382</string>
+			<string>8765759D-6469-4F89-A273-EF5F423A1B7D</string>
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
@@ -405,34 +341,21 @@ tell application "iTunes" to stop</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>escaping</key>
-				<integer>127</integer>
-				<key>script</key>
-				<string>tell application "Pomodoro" to start "ワニカニ" duration 25</string>
-				<key>type</key>
-				<integer>6</integer>
+				<key>argument</key>
+				<string>tell application "Pomodoro" to start "Shower #家事" duration 25</string>
+				<key>argumenttype</key>
+				<integer>3</integer>
+				<key>triggerid</key>
+				<string>Shower</string>
+				<key>triggername</key>
+				<string>Shower</string>
+				<key>workflowonly</key>
+				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.script</string>
+			<string>alfred.workflow.trigger.remote</string>
 			<key>uid</key>
-			<string>8765759D-6469-4F89-A273-EF5F423A1B7D</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>escaping</key>
-				<integer>127</integer>
-				<key>script</key>
-				<string>tell application "Pomodoro" to start "掃除" duration 25</string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>2399C5BD-F117-427E-8ACD-74DDEB02BCE7</string>
+			<string>74806920-4B07-482B-8505-BB9660DC20F9</string>
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
@@ -460,6 +383,27 @@ tell application "iTunes" to stop</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>script</key>
+				<string>tell application "Pomodoro" to start "掃除" duration 25</string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>2399C5BD-F117-427E-8ACD-74DDEB02BCE7</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
 				<key>escaping</key>
 				<integer>63</integer>
 				<key>script</key>
@@ -496,36 +440,38 @@ tell application "iTunes" to stop</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>anki</string>
-				<key>text</key>
-				<string>暗記</string>
-				<key>withspace</key>
+				<key>concurrently</key>
 				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>C41C01AD-F724-4CB8-8278-31A35FE25482</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>escaping</key>
 				<integer>127</integer>
 				<key>script</key>
-				<string>tell application "Pomodoro" to start "暗記する" duration 25</string>
+				<string>tell application "Pomodoro" to start "朝食" duration 25</string>
 				<key>type</key>
 				<integer>6</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>1EEDA452-8837-4B5B-921E-FF5EA6CBC7C7</string>
+			<string>E82A816E-E273-40C0-9BFD-D77D9DE211C0</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>breakfast</string>
+				<key>text</key>
+				<string>朝食</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>82302105-7B91-4EE9-B9CC-696F3FE3D357</string>
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
@@ -553,6 +499,8 @@ tell application "iTunes" to stop</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
 				<key>escaping</key>
 				<integer>127</integer>
 				<key>script</key>
@@ -583,6 +531,8 @@ tell application "iTunes" to stop</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
 				<key>escaping</key>
 				<integer>127</integer>
 				<key>script</key>
@@ -640,6 +590,8 @@ tell application "iTunes" to stop</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
 				<key>escaping</key>
 				<integer>127</integer>
 				<key>script</key>
@@ -654,360 +606,120 @@ tell application "iTunes" to stop</string>
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>escaping</key>
-				<integer>127</integer>
-				<key>script</key>
-				<string>tell application "Pomodoro" to start "夕食" duration 25</string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>9A45B3FD-9179-4F74-8CD5-5802114ADB04</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>dinner</string>
-				<key>text</key>
-				<string>Dinner</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>7C8EBD27-D5BE-4CD5-93D9-AF64E75DEE15</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>breakfast</string>
-				<key>text</key>
-				<string>朝食</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>82302105-7B91-4EE9-B9CC-696F3FE3D357</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>escaping</key>
-				<integer>127</integer>
-				<key>script</key>
-				<string>tell application "Pomodoro" to start "朝食" duration 25</string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>E82A816E-E273-40C0-9BFD-D77D9DE211C0</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>escaping</key>
-				<integer>127</integer>
-				<key>script</key>
-				<string>tell application "Pomodoro" to start "外食" duration 60</string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>57649D9D-C599-4050-AFD3-63C97F46A471</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>gaishoku</string>
-				<key>text</key>
-				<string>昼食</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>69AC44A5-37D7-4E15-9897-5C7D6EFF45A2</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>escaping</key>
-				<integer>127</integer>
-				<key>script</key>
-				<string>tell application "Pomodoro" to start "選択 #家事" duration 25</string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>EF36A105-9F56-482F-9556-273FA354F081</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>laundry</string>
-				<key>text</key>
-				<string>選択</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>4B38D33B-AA97-4409-ABD2-06BDE6A3F852</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>escaping</key>
-				<integer>127</integer>
-				<key>script</key>
-				<string>tell application "Pomodoro" to start "スーパー #家事" duration 60</string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>5881A7CF-4243-4D37-92BE-341FA6083802</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>grocery</string>
-				<key>text</key>
-				<string>スーパー</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>7F1FCDA8-0578-4D0B-AA22-56ABD12E7221</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
 	<key>uidata</key>
 	<dict>
-		<key>0A770BC1-803E-4F77-BB9A-A2367E91EE76</key>
-		<dict>
-			<key>ypos</key>
-			<real>120</real>
-		</dict>
-		<key>1915AF7A-CA7E-4C09-B382-7E7F8279944E</key>
-		<dict>
-			<key>ypos</key>
-			<real>230</real>
-		</dict>
-		<key>1EEDA452-8837-4B5B-921E-FF5EA6CBC7C7</key>
-		<dict>
-			<key>ypos</key>
-			<real>890</real>
-		</dict>
-		<key>213EAC74-71DD-4DA9-85DD-233423DAF251</key>
-		<dict>
-			<key>ypos</key>
-			<real>230</real>
-		</dict>
 		<key>2399C5BD-F117-427E-8ACD-74DDEB02BCE7</key>
 		<dict>
 			<key>ypos</key>
-			<real>670</real>
+			<real>340</real>
 		</dict>
-		<key>29769EC1-6A4E-4346-9F8A-6F7F647D7382</key>
+		<key>25A64920-19E4-446F-8755-77B44448D789</key>
 		<dict>
 			<key>ypos</key>
-			<real>450</real>
+			<real>180</real>
 		</dict>
 		<key>460967AF-78EE-4AEA-AE21-522BE2C73536</key>
 		<dict>
 			<key>ypos</key>
-			<real>670</real>
+			<real>340</real>
 		</dict>
-		<key>4812DB82-A5C7-4FA5-919D-A351A678E683</key>
-		<dict>
-			<key>ypos</key>
-			<real>450</real>
-		</dict>
-		<key>4B38D33B-AA97-4409-ABD2-06BDE6A3F852</key>
-		<dict>
-			<key>ypos</key>
-			<real>1700</real>
-		</dict>
-		<key>4F9F7B16-0875-49A6-9915-0D06800B80EB</key>
-		<dict>
-			<key>ypos</key>
-			<real>120</real>
-		</dict>
-		<key>57649D9D-C599-4050-AFD3-63C97F46A471</key>
-		<dict>
-			<key>ypos</key>
-			<real>1580</real>
-		</dict>
-		<key>5881A7CF-4243-4D37-92BE-341FA6083802</key>
-		<dict>
-			<key>ypos</key>
-			<real>1820</real>
-		</dict>
-		<key>6587B61E-D944-4F71-8A94-2AA1CD39D8D6</key>
-		<dict>
-			<key>ypos</key>
-			<real>1220</real>
-		</dict>
-		<key>69298158-8F4E-4E8A-9F2B-B21CCC54EFE7</key>
-		<dict>
-			<key>ypos</key>
-			<real>1110</real>
-		</dict>
-		<key>69AC44A5-37D7-4E15-9897-5C7D6EFF45A2</key>
-		<dict>
-			<key>ypos</key>
-			<real>1580</real>
-		</dict>
-		<key>6F9D7FCD-3E02-40E2-8117-6F4443E078C2</key>
-		<dict>
-			<key>ypos</key>
-			<real>1000</real>
-		</dict>
-		<key>7B1D988B-B82F-437F-BF0F-53080138B073</key>
-		<dict>
-			<key>ypos</key>
-			<real>1220</real>
-		</dict>
-		<key>7C8EBD27-D5BE-4CD5-93D9-AF64E75DEE15</key>
-		<dict>
-			<key>ypos</key>
-			<real>1340</real>
-		</dict>
-		<key>7F1FCDA8-0578-4D0B-AA22-56ABD12E7221</key>
-		<dict>
-			<key>ypos</key>
-			<real>1820</real>
-		</dict>
-		<key>82302105-7B91-4EE9-B9CC-696F3FE3D357</key>
-		<dict>
-			<key>ypos</key>
-			<real>1460</real>
-		</dict>
-		<key>8765759D-6469-4F89-A273-EF5F423A1B7D</key>
-		<dict>
-			<key>ypos</key>
-			<real>560</real>
-		</dict>
-		<key>95273F0D-07C0-408B-8774-46AE1A1C49B1</key>
-		<dict>
-			<key>ypos</key>
-			<real>780</real>
-		</dict>
-		<key>95704014-07CA-436D-B3AB-6D5966B8AC52</key>
+		<key>64FC7EF8-ADF0-4824-823E-BE7AACB64082</key>
 		<dict>
 			<key>ypos</key>
 			<real>10</real>
 		</dict>
-		<key>9A45B3FD-9179-4F74-8CD5-5802114ADB04</key>
-		<dict>
-			<key>ypos</key>
-			<real>1340</real>
-		</dict>
-		<key>9F04C2C9-189F-443D-883E-A7A6C681C4A2</key>
-		<dict>
-			<key>ypos</key>
-			<real>780</real>
-		</dict>
-		<key>C41C01AD-F724-4CB8-8278-31A35FE25482</key>
+		<key>6587B61E-D944-4F71-8A94-2AA1CD39D8D6</key>
 		<dict>
 			<key>ypos</key>
 			<real>890</real>
 		</dict>
-		<key>CEF6C200-942E-4AB2-A8F1-ED99617E9434</key>
+		<key>69298158-8F4E-4E8A-9F2B-B21CCC54EFE7</key>
+		<dict>
+			<key>ypos</key>
+			<real>780</real>
+		</dict>
+		<key>6F9D7FCD-3E02-40E2-8117-6F4443E078C2</key>
+		<dict>
+			<key>ypos</key>
+			<real>670</real>
+		</dict>
+		<key>74806920-4B07-482B-8505-BB9660DC20F9</key>
+		<dict>
+			<key>ypos</key>
+			<real>290</real>
+		</dict>
+		<key>7B1D988B-B82F-437F-BF0F-53080138B073</key>
+		<dict>
+			<key>ypos</key>
+			<real>890</real>
+		</dict>
+		<key>82302105-7B91-4EE9-B9CC-696F3FE3D357</key>
 		<dict>
 			<key>ypos</key>
 			<real>560</real>
 		</dict>
+		<key>8765759D-6469-4F89-A273-EF5F423A1B7D</key>
+		<dict>
+			<key>ypos</key>
+			<real>230</real>
+		</dict>
+		<key>95273F0D-07C0-408B-8774-46AE1A1C49B1</key>
+		<dict>
+			<key>ypos</key>
+			<real>450</real>
+		</dict>
+		<key>9F04C2C9-189F-443D-883E-A7A6C681C4A2</key>
+		<dict>
+			<key>ypos</key>
+			<real>450</real>
+		</dict>
+		<key>A0B57A63-342E-4718-97F2-BB1E13009355</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>A48D28FA-4B73-42B5-8985-30EBCCF25700</key>
+		<dict>
+			<key>ypos</key>
+			<real>70</real>
+		</dict>
+		<key>CEF6C200-942E-4AB2-A8F1-ED99617E9434</key>
+		<dict>
+			<key>ypos</key>
+			<real>230</real>
+		</dict>
 		<key>CF737191-B1FF-4A3A-AC27-3FBB90601615</key>
 		<dict>
 			<key>ypos</key>
-			<real>340</real>
+			<real>120</real>
 		</dict>
 		<key>D1317982-079B-4141-86FB-0925FE48F736</key>
 		<dict>
 			<key>ypos</key>
-			<real>1000</real>
+			<real>670</real>
 		</dict>
 		<key>DBE92C7C-5827-43A5-ABEF-65662139DC58</key>
 		<dict>
 			<key>ypos</key>
-			<real>1110</real>
+			<real>780</real>
 		</dict>
 		<key>E47856AB-C08F-4B95-A64B-576FF4C20069</key>
 		<dict>
 			<key>ypos</key>
-			<real>340</real>
+			<real>120</real>
 		</dict>
 		<key>E611B5AF-28B5-4B22-8E09-521FF0880B65</key>
 		<dict>
 			<key>ypos</key>
-			<real>1000</real>
+			<real>670</real>
 		</dict>
 		<key>E82A816E-E273-40C0-9BFD-D77D9DE211C0</key>
 		<dict>
 			<key>ypos</key>
-			<real>1460</real>
-		</dict>
-		<key>EF36A105-9F56-482F-9556-273FA354F081</key>
-		<dict>
-			<key>ypos</key>
-			<real>1700</real>
+			<real>560</real>
 		</dict>
 	</dict>
 	<key>webaddress</key>
