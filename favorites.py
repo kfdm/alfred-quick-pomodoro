@@ -7,13 +7,14 @@ import workflow.web as web
 
 FAVORITES_URL = 'http://tsundere.co/api/favorite/?format=json'
 
+
 def main(wf):
     params = dict(count=20, format='json')
     headers = {'Authorization': 'Token %s' % wf.settings['API_KEY']}
     r = workflow.web.get(FAVORITES_URL, params, headers)
     r.raise_for_status()
 
-    for favorite in r.json()['results']:
+    for favorite in sorted(r.json()['results'], key=lambda f: f['category']):
         icon = wf.datafile(favorite['title'])
         if os.path.exists(icon) is False:
             if favorite['icon']:
