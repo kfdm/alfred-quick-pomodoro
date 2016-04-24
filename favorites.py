@@ -15,7 +15,7 @@ def main(wf):
     r.raise_for_status()
 
     for favorite in sorted(r.json()['results'], key=lambda f: f['category']):
-        icon = wf.datafile(favorite['title'])
+        icon = wf.cachefile(favorite['title'])
         if os.path.exists(icon) is False:
             if favorite['icon']:
                 request = web.get(favorite['icon'])
