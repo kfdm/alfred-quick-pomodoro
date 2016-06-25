@@ -90,7 +90,7 @@
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>argumenttype</key>
-				<integer>2</integer>
+				<integer>1</integer>
 				<key>escaping</key>
 				<integer>127</integer>
 				<key>keyword</key>
@@ -120,7 +120,7 @@ python favorites.py
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
-				<false/>
+				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
@@ -177,11 +177,11 @@ python favorites.py
 			<key>config</key>
 			<dict>
 				<key>argumenttype</key>
-				<integer>2</integer>
+				<integer>1</integer>
 				<key>fixedorder</key>
 				<false/>
 				<key>items</key>
-				<string>[{"imagefile":"a8dbbb61f9ccdf5cb91f22d10febabb44810a20c.png","title":"勉強","arg":"tell application \"Pomodoro\" to start \"勉強 #勉強\" duration 25","subtitle":"勉強しよう！"},{"imagefile":"b230d2606fad4cc3cee8221beb0bc009c2591c9f.png","title":"鰐蟹","arg":"tell application \"Pomodoro\" to start \"ワニカニ #勉強\" duration 25"},{"imagefile":"d7f6c248481e73ee71047093626cdac1650dfc54.png","title":"掃除する","arg":"tell application \"Pomodoro\" to start \"掃除 #家事\" duration 25"},{"imagefile":"49bca6ceeb32b3ff14186da53575da7c295c8751.png","title":"経済","arg":"tell application \"Pomodoro\" to start \"経済 #家事\" duration 25"},{"imagefile":"c6f9c0bb866f3e343e1e9b9284c9156c1581f926.png","title":"Feeds","arg":"tell application \"Pomodoro\" to start \"Feeds\" duration 25"},{"imagefile":"3170e3b563d5559f8ff2bc4d1eb693a86ebb4223.png","title":"Shower","arg":"tell application \"Pomodoro\" to start \"Shower\" duration 25"},{"imagefile":"5618ba51775e893f0779267816b5704f467ebc86.png","title":"メール","arg":"tell application \"Pomodoro\" to start \"メール\" duration 25"},{"imagefile":"090ccc40a61867bd2b873421bbdc5e353e9ae20a.png","title":"暗記","arg":"tell application \"Pomodoro\" to start \"暗記 #勉強\" duration 25"}]</string>
+				<string>[{"imagefile":"a8dbbb61f9ccdf5cb91f22d10febabb44810a20c.png","title":"勉強","arg":"tell application \"Pomodoro\" to start \"勉強 #勉強\" duration 25","subtitle":"勉強しよう！"},{"imagefile":"b230d2606fad4cc3cee8221beb0bc009c2591c9f.png","title":"鰐蟹","arg":"tell application \"Pomodoro\" to start \"ワニカニ #勉強\" duration 25"},{"imagefile":"d7f6c248481e73ee71047093626cdac1650dfc54.png","title":"掃除する","arg":"tell application \"Pomodoro\" to start \"掃除 #家事\" duration 25"},{"imagefile":"49bca6ceeb32b3ff14186da53575da7c295c8751.png","title":"経済","arg":"tell application \"Pomodoro\" to start \"経済 #家事\" duration 25"},{"imagefile":"c6f9c0bb866f3e343e1e9b9284c9156c1581f926.png","title":"Feeds","arg":"tell application \"Pomodoro\" to start \"Feeds #暇潰す\" duration 25"},{"imagefile":"3170e3b563d5559f8ff2bc4d1eb693a86ebb4223.png","title":"Shower","arg":"tell application \"Pomodoro\" to start \"Shower #養生\" duration 25"},{"imagefile":"5618ba51775e893f0779267816b5704f467ebc86.png","title":"メール","arg":"tell application \"Pomodoro\" to start \"メール #社交\" duration 25"},{"imagefile":"090ccc40a61867bd2b873421bbdc5e353e9ae20a.png","title":"暗記","arg":"tell application \"Pomodoro\" to start \"暗記 #勉強\" duration 25"}]</string>
 				<key>keyword</key>
 				<string>qq</string>
 				<key>runningsubtext</key>
@@ -191,7 +191,7 @@ python favorites.py
 				<key>title</key>
 				<string></string>
 				<key>withspace</key>
-				<false/>
+				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.listfilter</string>
@@ -225,7 +225,7 @@ python favorites.py
 			<key>config</key>
 			<dict>
 				<key>argument</key>
-				<string>tell application "Pomodoro" to start "Shower #家事" duration 25</string>
+				<string>tell application "Pomodoro" to start "Shower #養生" duration 25</string>
 				<key>argumenttype</key>
 				<integer>3</integer>
 				<key>triggerid</key>
