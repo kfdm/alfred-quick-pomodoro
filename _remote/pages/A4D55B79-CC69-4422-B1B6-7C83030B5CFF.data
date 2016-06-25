@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>iconid</key>
-	<string>E5AAD5B8-5441-4D2E-B652-9D6374F546B5</string>
+	<string>3DA2456D-3AE5-4B1C-94C6-E07BED089AA8</string>
 	<key>iconisuserspecified</key>
 	<false/>
 	<key>items</key>
@@ -68,7 +68,23 @@
 		<dict/>
 		<dict/>
 		<dict/>
-		<dict/>
+		<dict>
+			<key>actionconfig</key>
+			<dict>
+				<key>autoworkflowuid</key>
+				<true/>
+				<key>triggerid</key>
+				<string>掃除</string>
+			</dict>
+			<key>actionuid</key>
+			<string>remote.alfred.runworkflow</string>
+			<key>buttoniconid</key>
+			<string>DEE47E44-8E5C-4E09-9338-74DDC1772C66</string>
+			<key>buttonlabel</key>
+			<string>掃除</string>
+			<key>itemuid</key>
+			<string>F504F5F9-0143-40D0-9704-49168C2EC139</string>
+		</dict>
 		<dict/>
 		<dict/>
 		<dict/>

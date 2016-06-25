@@ -73,6 +73,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>C8706A59-CBEF-40C7-A067-065D0E49F70A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>64FC7EF8-ADF0-4824-823E-BE7AACB64082</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 	</dict>
 	<key>createdby</key>
 	<string>Paul Traylor</string>
@@ -164,7 +177,7 @@ python favorites.py
 				<key>triggername</key>
 				<string>料理</string>
 				<key>workflowonly</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.remote</string>
@@ -212,7 +225,7 @@ python favorites.py
 				<key>triggername</key>
 				<string>朝食</string>
 				<key>workflowonly</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.remote</string>
@@ -233,12 +246,33 @@ python favorites.py
 				<key>triggername</key>
 				<string>Shower</string>
 				<key>workflowonly</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.remote</string>
 			<key>uid</key>
 			<string>74806920-4B07-482B-8505-BB9660DC20F9</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>tell application "Pomodoro" to start "掃除 #家事" duration 25</string>
+				<key>argumenttype</key>
+				<integer>3</integer>
+				<key>triggerid</key>
+				<string>掃除</string>
+				<key>triggername</key>
+				<string>掃除</string>
+				<key>workflowonly</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.remote</string>
+			<key>uid</key>
+			<string>C8706A59-CBEF-40C7-A067-065D0E49F70A</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -288,6 +322,13 @@ python favorites.py
 			<integer>100</integer>
 			<key>ypos</key>
 			<real>70</real>
+		</dict>
+		<key>C8706A59-CBEF-40C7-A067-065D0E49F70A</key>
+		<dict>
+			<key>xpos</key>
+			<integer>100</integer>
+			<key>ypos</key>
+			<integer>410</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>
