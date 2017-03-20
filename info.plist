@@ -3,9 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>net.kungfudiscomonkey.alfred.commonpomodoro</string>
-	<key>category</key>
-	<string>Productivity</string>
+	<string>net.kungfudiscomonkey.alfred.quickpomodoro</string>
 	<key>connections</key>
 	<dict>
 		<key>15F091E1-0C42-4D22-B10C-1584889CEA94</key>
@@ -136,11 +134,11 @@
 	<key>createdby</key>
 	<string>Paul Traylor</string>
 	<key>description</key>
-	<string>Common Pomodoro Sprints</string>
+	<string></string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Common Pomodoro</string>
+	<string>Quick Pomodoro</string>
 	<key>objects</key>
 	<array>
 		<dict>
