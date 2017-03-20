@@ -8,84 +8,8 @@
 	<string>Productivity</string>
 	<key>connections</key>
 	<dict>
-		<key>25A64920-19E4-446F-8755-77B44448D789</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>64FC7EF8-ADF0-4824-823E-BE7AACB64082</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>74806920-4B07-482B-8505-BB9660DC20F9</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>64FC7EF8-ADF0-4824-823E-BE7AACB64082</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>7BC0775E-84AD-49C7-9013-93B61B2A41AC</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>64FC7EF8-ADF0-4824-823E-BE7AACB64082</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>A0B57A63-342E-4718-97F2-BB1E13009355</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>64FC7EF8-ADF0-4824-823E-BE7AACB64082</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>A48D28FA-4B73-42B5-8985-30EBCCF25700</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>64FC7EF8-ADF0-4824-823E-BE7AACB64082</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>C8706A59-CBEF-40C7-A067-065D0E49F70A</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>64FC7EF8-ADF0-4824-823E-BE7AACB64082</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
+		<array/>
 	</dict>
 	<key>createdby</key>
 	<string>Paul Traylor</string>
@@ -97,51 +21,6 @@
 	<string>Common Pomodoro</string>
 	<key>objects</key>
 	<array>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<false/>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>escaping</key>
-				<integer>127</integer>
-				<key>keyword</key>
-				<string>qqq</string>
-				<key>queuedelaycustom</key>
-				<integer>1</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<false/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>script</key>
-				<string>#cat quick.xml
-python favorites.py
-</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string></string>
-				<key>title</key>
-				<string>Quick Pomodoro</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>A0B57A63-342E-4718-97F2-BB1E13009355</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -168,126 +47,98 @@ python favorites.py
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argument</key>
-				<string>tell application "Pomodoro" to start "料理 #家事" duration 60</string>
-				<key>argumenttype</key>
-				<integer>3</integer>
-				<key>triggerid</key>
-				<string>料理</string>
-				<key>triggername</key>
-				<string>料理</string>
-				<key>workflowonly</key>
+				<key>alfredfiltersresults</key>
 				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.remote</string>
-			<key>uid</key>
-			<string>A48D28FA-4B73-42B5-8985-30EBCCF25700</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argumenttype</key>
 				<integer>1</integer>
-				<key>fixedorder</key>
-				<false/>
-				<key>items</key>
-				<string>[{"imagefile":"a8dbbb61f9ccdf5cb91f22d10febabb44810a20c.png","title":"勉強","arg":"tell application \"Pomodoro\" to start \"勉強 #勉強\" duration 25","subtitle":"勉強しよう！"},{"imagefile":"b230d2606fad4cc3cee8221beb0bc009c2591c9f.png","title":"鰐蟹","arg":"tell application \"Pomodoro\" to start \"ワニカニ #勉強\" duration 25"},{"imagefile":"d7f6c248481e73ee71047093626cdac1650dfc54.png","title":"掃除する","arg":"tell application \"Pomodoro\" to start \"掃除 #家事\" duration 25"},{"imagefile":"49bca6ceeb32b3ff14186da53575da7c295c8751.png","title":"経済","arg":"tell application \"Pomodoro\" to start \"経済 #家事\" duration 25"},{"imagefile":"c6f9c0bb866f3e343e1e9b9284c9156c1581f926.png","title":"Feeds","arg":"tell application \"Pomodoro\" to start \"Feeds #暇潰す\" duration 25"},{"imagefile":"3170e3b563d5559f8ff2bc4d1eb693a86ebb4223.png","title":"Shower","arg":"tell application \"Pomodoro\" to start \"Shower #養生\" duration 25"},{"imagefile":"5618ba51775e893f0779267816b5704f467ebc86.png","title":"メール","arg":"tell application \"Pomodoro\" to start \"メール #社交\" duration 25"},{"imagefile":"090ccc40a61867bd2b873421bbdc5e353e9ae20a.png","title":"暗記","arg":"tell application \"Pomodoro\" to start \"暗記 #勉強\" duration 25"}]</string>
+				<key>escaping</key>
+				<integer>127</integer>
 				<key>keyword</key>
 				<string>qq</string>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
 				<key>runningsubtext</key>
 				<string></string>
+				<key>script</key>
+				<string>#cat quick.xml
+python favorites.py
+</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>cached.py</string>
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
-				<string></string>
+				<string>Quick Pomodoro</string>
+				<key>type</key>
+				<integer>8</integer>
 				<key>withspace</key>
 				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.listfilter</string>
+			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>7BC0775E-84AD-49C7-9013-93B61B2A41AC</string>
+			<string>7B1A83CE-AC23-4A26-9759-F4935C9A2139</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argument</key>
-				<string>tell application "Pomodoro" to start "朝食 #家事" duration 25</string>
-				<key>argumenttype</key>
-				<integer>3</integer>
-				<key>triggerid</key>
-				<string>朝食</string>
-				<key>triggername</key>
-				<string>朝食</string>
-				<key>workflowonly</key>
+				<key>alfredfiltersresults</key>
 				<false/>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>keyword</key>
+				<string>qqq</string>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>#cat quick.xml
+python favorites.py
+</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>favorites.py</string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Refresh Favorites</string>
+				<key>type</key>
+				<integer>8</integer>
+				<key>withspace</key>
+				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.trigger.remote</string>
+			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>25A64920-19E4-446F-8755-77B44448D789</string>
+			<string>A0B57A63-342E-4718-97F2-BB1E13009355</string>
 			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>tell application "Pomodoro" to start "Shower #養生" duration 25</string>
-				<key>argumenttype</key>
-				<integer>3</integer>
-				<key>triggerid</key>
-				<string>Shower</string>
-				<key>triggername</key>
-				<string>Shower</string>
-				<key>workflowonly</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.remote</string>
-			<key>uid</key>
-			<string>74806920-4B07-482B-8505-BB9660DC20F9</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>tell application "Pomodoro" to start "掃除 #家事" duration 25</string>
-				<key>argumenttype</key>
-				<integer>3</integer>
-				<key>triggerid</key>
-				<string>掃除</string>
-				<key>triggername</key>
-				<string>掃除</string>
-				<key>workflowonly</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.remote</string>
-			<key>uid</key>
-			<string>C8706A59-CBEF-40C7-A067-065D0E49F70A</string>
-			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
 	<key>uidata</key>
 	<dict>
-		<key>25A64920-19E4-446F-8755-77B44448D789</key>
-		<dict>
-			<key>xpos</key>
-			<integer>100</integer>
-			<key>ypos</key>
-			<real>180</real>
-		</dict>
 		<key>64FC7EF8-ADF0-4824-823E-BE7AACB64082</key>
 		<dict>
 			<key>xpos</key>
@@ -295,40 +146,19 @@ python favorites.py
 			<key>ypos</key>
 			<real>10</real>
 		</dict>
-		<key>74806920-4B07-482B-8505-BB9660DC20F9</key>
+		<key>7B1A83CE-AC23-4A26-9759-F4935C9A2139</key>
 		<dict>
 			<key>xpos</key>
-			<integer>100</integer>
+			<integer>310</integer>
 			<key>ypos</key>
-			<real>290</real>
-		</dict>
-		<key>7BC0775E-84AD-49C7-9013-93B61B2A41AC</key>
-		<dict>
-			<key>xpos</key>
-			<integer>300</integer>
-			<key>ypos</key>
-			<integer>120</integer>
+			<integer>20</integer>
 		</dict>
 		<key>A0B57A63-342E-4718-97F2-BB1E13009355</key>
 		<dict>
 			<key>xpos</key>
-			<integer>300</integer>
+			<integer>310</integer>
 			<key>ypos</key>
-			<real>10</real>
-		</dict>
-		<key>A48D28FA-4B73-42B5-8985-30EBCCF25700</key>
-		<dict>
-			<key>xpos</key>
-			<integer>100</integer>
-			<key>ypos</key>
-			<real>70</real>
-		</dict>
-		<key>C8706A59-CBEF-40C7-A067-065D0E49F70A</key>
-		<dict>
-			<key>xpos</key>
-			<integer>100</integer>
-			<key>ypos</key>
-			<integer>410</integer>
+			<integer>140</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>

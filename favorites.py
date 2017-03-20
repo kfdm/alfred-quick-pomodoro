@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # encoding: utf-8
 
 import os
@@ -5,7 +6,7 @@ import sys
 import workflow
 import workflow.web as web
 
-FAVORITES_URL = 'http://tsundere.co/api/favorite/?format=json'
+FAVORITES_URL = 'http://tsundere.co/api/favorite?format=json'
 
 
 def main(wf):
@@ -13,6 +14,9 @@ def main(wf):
     headers = {'Authorization': 'Token %s' % wf.settings['API_KEY']}
     r = workflow.web.get(FAVORITES_URL, params, headers)
     r.raise_for_status()
+
+    with open(wf.cachefile('response.json'), 'wb') as fp:
+        fp.write(r.text.encode('utf8', 'ignore'))
 
     for favorite in sorted(r.json()['results'], key=lambda f: f['category']):
         icon = wf.cachefile(favorite['title'])
