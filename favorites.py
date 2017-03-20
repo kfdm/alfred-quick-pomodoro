@@ -1,8 +1,10 @@
 #!/usr/bin/env python
 # encoding: utf-8
 
+import json
 import os
 import sys
+
 import workflow
 import workflow.web as web
 
@@ -10,6 +12,7 @@ FAVORITES_URL = 'http://tsundere.co/api/favorite?format=json'
 
 
 def main(wf):
+    response = []
     params = dict(count=20, format='json')
     headers = {'Authorization': 'Token %s' % wf.settings['API_KEY']}
     r = workflow.web.get(FAVORITES_URL, params, headers)
@@ -26,14 +29,19 @@ def main(wf):
                 request.save_to_path(icon)
             else:
                 icon = workflow.ICON_CLOCK
-        wf.add_item(
-            title=favorite['title'],
-            subtitle=favorite['category'],
-            valid=True,
-            arg=u'tell application "Pomodoro" to start "{title} #{category}" duration {duration}'.format(**favorite),
-            icon=icon,
-        )
-    wf.send_feedback()
+        response.append({
+            'title': favorite['title'],
+            'subtitle': favorite['category'],
+            'arg': json.dumps(favorite),
+            'icon': {'path': icon},
+            'mods': {
+                'cmd': {
+                    'arg': u'tell application "Pomodoro" to start "{title} #{category}" duration {duration}'.format(**favorite),
+                    'subtitle': 'Launch with Pomodoro.app'
+                }
+            }
+        })
+    print(json.dumps({'items': response}))
 
 if __name__ == u'__main__':
     sys.exit(workflow.Workflow().run(main))

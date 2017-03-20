@@ -8,8 +8,52 @@
 	<string>Productivity</string>
 	<key>connections</key>
 	<dict>
+		<key>7B1A83CE-AC23-4A26-9759-F4935C9A2139</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>AD307BCB-BCAE-4F9D-94A7-74ACAA50C745</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>64FC7EF8-ADF0-4824-823E-BE7AACB64082</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>A0B57A63-342E-4718-97F2-BB1E13009355</key>
-		<array/>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>AD307BCB-BCAE-4F9D-94A7-74ACAA50C745</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>64FC7EF8-ADF0-4824-823E-BE7AACB64082</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 	</dict>
 	<key>createdby</key>
 	<string>Paul Traylor</string>
@@ -29,18 +73,18 @@
 				<key>escaping</key>
 				<integer>0</integer>
 				<key>script</key>
-				<string>{query}</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
 				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>trigger.py</string>
 				<key>type</key>
-				<integer>6</integer>
+				<integer>8</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>64FC7EF8-ADF0-4824-823E-BE7AACB64082</string>
+			<string>AD307BCB-BCAE-4F9D-94A7-74ACAA50C745</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -86,6 +130,29 @@ python favorites.py
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
 			<string>7B1A83CE-AC23-4A26-9759-F4935C9A2139</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>{query}</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>64FC7EF8-ADF0-4824-823E-BE7AACB64082</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -144,7 +211,7 @@ python favorites.py
 			<key>xpos</key>
 			<integer>500</integer>
 			<key>ypos</key>
-			<real>10</real>
+			<integer>140</integer>
 		</dict>
 		<key>7B1A83CE-AC23-4A26-9759-F4935C9A2139</key>
 		<dict>
@@ -159,6 +226,13 @@ python favorites.py
 			<integer>310</integer>
 			<key>ypos</key>
 			<integer>140</integer>
+		</dict>
+		<key>AD307BCB-BCAE-4F9D-94A7-74ACAA50C745</key>
+		<dict>
+			<key>xpos</key>
+			<integer>500</integer>
+			<key>ypos</key>
+			<integer>20</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>
