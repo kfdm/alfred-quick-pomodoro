@@ -13,7 +13,7 @@ FAVORITES_URL = 'https://tsundere.co/api/pomodoro/start'
 
 def main(wf):
     pomodoro = {
-        'duration': os.environ['duration']
+        'duration': int(os.environ['duration'])
     }
     try:
         pomodoro['title'], pomodoro['category'] = wf.args[0].split('#', 2)
