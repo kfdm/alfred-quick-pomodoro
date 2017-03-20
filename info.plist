@@ -54,6 +54,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>AD307BCB-BCAE-4F9D-94A7-74ACAA50C745</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>1A723280-E50D-482A-AAFE-CC094BE24865</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 	</dict>
 	<key>createdby</key>
 	<string>Paul Traylor</string>
@@ -87,6 +100,27 @@
 			<string>AD307BCB-BCAE-4F9D-94A7-74ACAA50C745</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>Pomodoro</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>1A723280-E50D-482A-AAFE-CC094BE24865</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -206,6 +240,13 @@ python favorites.py
 	<string></string>
 	<key>uidata</key>
 	<dict>
+		<key>1A723280-E50D-482A-AAFE-CC094BE24865</key>
+		<dict>
+			<key>xpos</key>
+			<integer>680</integer>
+			<key>ypos</key>
+			<integer>20</integer>
+		</dict>
 		<key>64FC7EF8-ADF0-4824-823E-BE7AACB64082</key>
 		<dict>
 			<key>xpos</key>
