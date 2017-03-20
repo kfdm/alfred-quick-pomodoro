@@ -8,7 +8,7 @@ import sys
 import workflow
 import workflow.web as web
 
-FAVORITES_URL = 'http://tsundere.co/api/favorite?format=json'
+FAVORITES_URL = 'https://tsundere.co/api/favorite?format=json'
 
 
 def main(wf):

@@ -8,6 +8,71 @@
 	<string>Productivity</string>
 	<key>connections</key>
 	<dict>
+		<key>15F091E1-0C42-4D22-B10C-1584889CEA94</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>720C961F-F581-4891-9B3C-4881B4C718B5</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>214D77F1-761C-4BBB-8D70-6F43D896BF23</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>1A723280-E50D-482A-AAFE-CC094BE24865</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>253899C4-9EA1-4677-82CB-B1AFE0E46A06</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>214D77F1-761C-4BBB-8D70-6F43D896BF23</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>2F85F248-9822-4DDA-B37A-11B91B5CE40E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>253899C4-9EA1-4677-82CB-B1AFE0E46A06</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>720C961F-F581-4891-9B3C-4881B4C718B5</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>214D77F1-761C-4BBB-8D70-6F43D896BF23</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>7B1A83CE-AC23-4A26-9759-F4935C9A2139</key>
 		<array>
 			<dict>
@@ -170,29 +235,6 @@ python favorites.py
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string>{query}</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>64FC7EF8-ADF0-4824-823E-BE7AACB64082</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>argumenttype</key>
@@ -235,17 +277,173 @@ python favorites.py
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>{query}</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>64FC7EF8-ADF0-4824-823E-BE7AACB64082</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>pomodoro</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>New Pomodoro</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>2F85F248-9822-4DDA-B37A-11B91B5CE40E</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>json</key>
+				<string>{
+  "alfredworkflow" : {
+    "arg" : "{query}",
+    "variables" : {
+      "duration" : 25
+    }
+  }
+}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.json</string>
+			<key>uid</key>
+			<string>253899C4-9EA1-4677-82CB-B1AFE0E46A06</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>parse.py</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>214D77F1-761C-4BBB-8D70-6F43D896BF23</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>hour</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>New Pomodoro</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>15F091E1-0C42-4D22-B10C-1584889CEA94</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>json</key>
+				<string>{
+  "alfredworkflow" : {
+    "arg" : "{query}",
+    "variables" : {
+      "duration" : 60
+    }
+  }
+}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.json</string>
+			<key>uid</key>
+			<string>720C961F-F581-4891-9B3C-4881B4C718B5</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
 	<key>uidata</key>
 	<dict>
+		<key>15F091E1-0C42-4D22-B10C-1584889CEA94</key>
+		<dict>
+			<key>xpos</key>
+			<integer>310</integer>
+			<key>ypos</key>
+			<integer>390</integer>
+		</dict>
 		<key>1A723280-E50D-482A-AAFE-CC094BE24865</key>
 		<dict>
 			<key>xpos</key>
-			<integer>680</integer>
+			<integer>740</integer>
 			<key>ypos</key>
 			<integer>20</integer>
+		</dict>
+		<key>214D77F1-761C-4BBB-8D70-6F43D896BF23</key>
+		<dict>
+			<key>xpos</key>
+			<integer>550</integer>
+			<key>ypos</key>
+			<integer>330</integer>
+		</dict>
+		<key>253899C4-9EA1-4677-82CB-B1AFE0E46A06</key>
+		<dict>
+			<key>xpos</key>
+			<integer>460</integer>
+			<key>ypos</key>
+			<integer>300</integer>
+		</dict>
+		<key>2F85F248-9822-4DDA-B37A-11B91B5CE40E</key>
+		<dict>
+			<key>xpos</key>
+			<integer>310</integer>
+			<key>ypos</key>
+			<integer>270</integer>
 		</dict>
 		<key>64FC7EF8-ADF0-4824-823E-BE7AACB64082</key>
 		<dict>
@@ -253,6 +451,13 @@ python favorites.py
 			<integer>500</integer>
 			<key>ypos</key>
 			<integer>140</integer>
+		</dict>
+		<key>720C961F-F581-4891-9B3C-4881B4C718B5</key>
+		<dict>
+			<key>xpos</key>
+			<integer>460</integer>
+			<key>ypos</key>
+			<integer>420</integer>
 		</dict>
 		<key>7B1A83CE-AC23-4A26-9759-F4935C9A2139</key>
 		<dict>
