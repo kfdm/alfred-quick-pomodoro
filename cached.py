@@ -11,11 +11,12 @@ import workflow
 def main(wf):
     response = []
     with open(wf.cachefile('response.json'), 'rb') as fp:
-        for favorite in sorted(json.load(fp)['results'], key=lambda f: f['category']):
+        for favorite in sorted(json.load(fp)['results'], key=lambda f: f['count'], reverse=True):
             icon = wf.cachefile(favorite['title'])
             if os.path.exists(icon) is False:
                 icon = workflow.ICON_CLOCK
             response.append({
+                'uid': favorite['id'],
                 'title': favorite['title'],
                 'subtitle': favorite['category'],
                 'arg': json.dumps(favorite),

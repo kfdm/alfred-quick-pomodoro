@@ -21,7 +21,7 @@ def main(wf):
     with open(wf.cachefile('response.json'), 'wb') as fp:
         fp.write(r.text.encode('utf8', 'ignore'))
 
-    for favorite in sorted(r.json()['results'], key=lambda f: f['category']):
+    for favorite in sorted(json.load(fp)['results'], key=lambda f: f['count'], reverse=True):
         icon = wf.cachefile(favorite['title'])
         if os.path.exists(icon) is False:
             if favorite['icon']:
@@ -30,6 +30,7 @@ def main(wf):
             else:
                 icon = workflow.ICON_CLOCK
         response.append({
+            'uid': favorite['id'],
             'title': favorite['title'],
             'subtitle': favorite['category'],
             'arg': json.dumps(favorite),
