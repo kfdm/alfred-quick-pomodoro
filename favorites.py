@@ -21,7 +21,7 @@ def main(wf):
     with open(wf.cachefile('response.json'), 'wb') as fp:
         fp.write(r.text.encode('utf8', 'ignore'))
 
-    for favorite in sorted(json.load(fp)['results'], key=lambda f: f['count'], reverse=True):
+    for favorite in sorted(json.loads(r.text)['results'], key=lambda f: f['count'], reverse=True):
         icon = wf.cachefile(favorite['title'])
         if os.path.exists(icon) is False:
             if favorite['icon']:
