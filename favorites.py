@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # encoding: utf-8
 
+import datetime
 import json
 import os
 import sys
@@ -32,7 +33,11 @@ def main(wf):
         response.append({
             'uid': favorite['id'],
             'title': favorite['title'],
-            'subtitle': favorite['category'],
+            'subtitle': u'{} {} [{}]'.format(
+                favorite['category'],
+                datetime.timedelta(minutes=favorite['duration']),
+                favorite['count'],
+                ),
             'arg': json.dumps(favorite),
             'icon': {'path': icon},
             'mods': {
