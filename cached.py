@@ -24,7 +24,7 @@ def main(wf):
                     datetime.timedelta(minutes=favorite['duration']),
                     favorite['count'],
                     ),
-                'arg': json.dumps(favorite),
+                'arg': favorite['id'],
                 'icon': {'path': icon},
                 'mods': {
                     'cmd': {
