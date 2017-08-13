@@ -4,16 +4,20 @@
 import json
 import os
 import sys
-
+import datetime
+from dateutil.parser import parse
+from dateutil.tz import tzutc
 import requests
 import workflow
 
-FAVORITES_URL = 'https://tsundere.co/api/pomodoro/start'
+POMODORO_URL = 'https://tsundere.co/api/pomodoro'
 
 
 def main(wf):
+    now = datetime.datetime.now(tzutc())
     pomodoro = {
-        'duration': int(os.environ['duration'])
+        'start': now.isoformat(),
+        'end': (now + datetime.timedelta(minutes=int(os.environ['duration']))).isoformat(),
     }
     try:
         pomodoro['title'], pomodoro['category'] = wf.args[0].split('#', 2)
@@ -21,8 +25,16 @@ def main(wf):
         pomodoro['title'] = wf.args[0]
 
     headers = {'Authorization': 'Token %s' % wf.settings['API_KEY']}
+    r = requests.get(POMODORO_URL, headers=headers)
+    now = datetime.datetime.now(tzutc())
+    for p in r.json()['results']:
+        dt = parse(p['end'])
+        if dt > now:
+            print(u'Active Pomodoro: {title} {end}'.format(status=r.status_code, **p).encode('utf8', 'ignore'))
+            exit()
 
-    r = requests.post(FAVORITES_URL, data=json.dumps(pomodoro), headers=headers)
+    headers['Content-Type'] = 'application/json'
+    r = requests.post(POMODORO_URL, data=json.dumps(pomodoro), headers=headers)
 
     if r.ok:
         print(u'{title} {end}'.format(**r.json()).encode('utf8', 'ignore'))
