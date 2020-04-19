@@ -13,3 +13,6 @@ release:
 
 run:
 	swift run alfred-pomodoro
+
+install: build
+	install .build/debug/alfred-pomodoro workflow/pomodoro
