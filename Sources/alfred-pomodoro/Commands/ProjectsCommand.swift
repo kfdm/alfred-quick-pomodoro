@@ -8,14 +8,11 @@
 import Foundation
 import SwiftCLI
 
-class ProjectCommand: Command {
+class ProjectCommand: SemaphoreCommand, Command {
     let name = "projects"
 
-    func execute() throws {
+    override func executeSemaphore() throws {
         var items = [AlfredRow]()
-
-        let sema = DispatchSemaphore(value: 0)
-
         Project.list { result in
             switch result {
             case let .failure(error):
@@ -26,8 +23,7 @@ class ProjectCommand: Command {
                 }
                 self.stdout <<< AlfredJson(items: Array(items.prefix(10))).json
             }
-            sema.signal()
+            self.sema.signal()
         }
-        sema.wait()
     }
 }

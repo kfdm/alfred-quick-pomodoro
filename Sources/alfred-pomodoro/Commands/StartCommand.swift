@@ -7,7 +7,7 @@
 import Foundation
 import SwiftCLI
 
-class StartCommand: Command {
+class StartCommand: SemaphoreCommand, Command {
     let name = "start"
 
     @Key("-d", "--duration", description: "How long of a sprint")
@@ -18,11 +18,8 @@ class StartCommand: Command {
 
     @CollectedParam var message: [String]
 
-    func execute() throws {
+    override func executeSemaphore() throws {
         let pomodoro = Pomodoro(title: message.joined(separator: " "), project: project, minutes: duration)
-
-        let sema = DispatchSemaphore(value: 0)
-
         pomodoro.submit { result in
             switch result {
             case let .failure(error):
@@ -30,8 +27,7 @@ class StartCommand: Command {
             case let .success(newPomodoro):
                 self.stdout <<< "\(newPomodoro)"
             }
-            sema.signal()
+            self.sema.signal()
         }
-        sema.wait()
     }
 }
