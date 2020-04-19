@@ -1,5 +1,6 @@
 build:
-	swift build
+	swift build -Xswiftc "-target" \
+    -Xswiftc "x86_64-apple-macosx10.12"
 
 update:
 	swift package update
@@ -11,8 +12,8 @@ lint:
 release:
 	swift build -c release
 
-run:
-	swift run alfred-pomodoro
+run: build
+	.build/debug/alfred-pomodoro projects
 
 install: build
 	install .build/debug/alfred-pomodoro workflow/pomodoro
