@@ -12,7 +12,7 @@ class ProjectCommand: Command {
     let name = "projects"
     let shortDescription = "Says hello to the world"
 
-    func execute() throws  {
+    func execute() throws {
         stdout <<< "Hello world!"
     }
 
