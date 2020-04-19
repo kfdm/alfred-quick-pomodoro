@@ -8,5 +8,6 @@ class Settings {
     static let keychain = Keychain(accessGroup: Settings.identifier)
 }
 
-let myCli = CLI(name: "alfred-pomodoro", version: "1.0.0", description: "Greeter - a friendly greeter", commands: [LoginCommand(), ProjectCommand()])
-myCli.goAndExit()
+let cli = CLI(name: "alfred-pomodoro", version: "1.0.0", description: "Greeter - a friendly greeter", commands: [StartCommand(), LoginCommand(), ProjectCommand()])
+cli.parser.parseOptionsAfterCollectedParameter = true
+cli.goAndExit()

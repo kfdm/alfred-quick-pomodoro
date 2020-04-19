@@ -8,11 +8,76 @@
 	<string>Productivity</string>
 	<key>connections</key>
 	<dict>
-		<key>B09499CD-BE7B-44EF-8CD0-A9C746EA80B5</key>
+		<key>48817261-F349-4158-91DA-64D429A282ED</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>4FAF6D7D-AF01-417F-8E42-4B45FC9CE6BC</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>4FAF6D7D-AF01-417F-8E42-4B45FC9CE6BC</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B09499CD-BE7B-44EF-8CD0-A9C746EA80B5</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>50A4FCF7-A142-402B-92B3-89DBB84DD41E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B9724D6A-639B-4520-97E2-BA264DE2A86B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>6E78C70E-DEB0-49B1-957B-33F3B91A5740</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>7F26C56D-861F-4E56-86D7-1B4B221A2099</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>B09499CD-BE7B-44EF-8CD0-A9C746EA80B5</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>6E78C70E-DEB0-49B1-957B-33F3B91A5740</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>B9724D6A-639B-4520-97E2-BA264DE2A86B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B09499CD-BE7B-44EF-8CD0-A9C746EA80B5</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -44,11 +109,9 @@
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
-				<integer>0</integer>
+				<integer>2</integer>
 				<key>escaping</key>
 				<integer>102</integer>
-				<key>keyword</key>
-				<string>hour</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -74,7 +137,7 @@ exec ./pomodoro projects</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
@@ -86,16 +149,35 @@ exec ./pomodoro projects</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>hour</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Do a 1 hour sprint</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>50A4FCF7-A142-402B-92B3-89DBB84DD41E</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>query=$1
-
-exec ./pomodoro start $1 --project $2 --duration 25</string>
+				<string>./pomodoro start {query}</string>
 				<key>scriptargtype</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>scriptfile</key>
 				<string>parse.py</string>
 				<key>type</key>
@@ -108,24 +190,135 @@ exec ./pomodoro start $1 --project $2 --duration 25</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>variables</key>
+				<dict>
+					<key>duration</key>
+					<string>60</string>
+					<key>message</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>B9724D6A-639B-4520-97E2-BA264DE2A86B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>--project {query} --duration {var:duration} {var:message}</string>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>6E78C70E-DEB0-49B1-957B-33F3B91A5740</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>pomodoro</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Do a default Pomodoro</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>48817261-F349-4158-91DA-64D429A282ED</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>variables</key>
+				<dict>
+					<key>duration</key>
+					<string>25</string>
+					<key>message</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>4FAF6D7D-AF01-417F-8E42-4B45FC9CE6BC</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
 	<key>uidata</key>
 	<dict>
+		<key>48817261-F349-4158-91DA-64D429A282ED</key>
+		<dict>
+			<key>xpos</key>
+			<integer>35</integer>
+			<key>ypos</key>
+			<integer>340</integer>
+		</dict>
+		<key>4FAF6D7D-AF01-417F-8E42-4B45FC9CE6BC</key>
+		<dict>
+			<key>xpos</key>
+			<integer>215</integer>
+			<key>ypos</key>
+			<integer>370</integer>
+		</dict>
+		<key>50A4FCF7-A142-402B-92B3-89DBB84DD41E</key>
+		<dict>
+			<key>xpos</key>
+			<integer>30</integer>
+			<key>ypos</key>
+			<integer>200</integer>
+		</dict>
+		<key>6E78C70E-DEB0-49B1-957B-33F3B91A5740</key>
+		<dict>
+			<key>xpos</key>
+			<integer>490</integer>
+			<key>ypos</key>
+			<integer>230</integer>
+		</dict>
 		<key>7F26C56D-861F-4E56-86D7-1B4B221A2099</key>
 		<dict>
 			<key>xpos</key>
-			<integer>270</integer>
+			<integer>590</integer>
 			<key>ypos</key>
-			<integer>150</integer>
+			<integer>200</integer>
 		</dict>
 		<key>B09499CD-BE7B-44EF-8CD0-A9C746EA80B5</key>
 		<dict>
 			<key>xpos</key>
-			<integer>60</integer>
+			<integer>310</integer>
 			<key>ypos</key>
-			<integer>150</integer>
+			<integer>200</integer>
+		</dict>
+		<key>B9724D6A-639B-4520-97E2-BA264DE2A86B</key>
+		<dict>
+			<key>xpos</key>
+			<integer>220</integer>
+			<key>ypos</key>
+			<integer>230</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>

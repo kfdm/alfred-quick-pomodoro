@@ -24,11 +24,10 @@ class ProjectCommand: Command {
                 projects.forEach { project in
                     items.append(AlfredRow(arg: project.id, title: project.name, icon: nil))
                 }
+                self.stdout <<< AlfredJson(items: Array(items.prefix(10))).json
             }
             sema.signal()
         }
         sema.wait()
-
-        stdout <<< AlfredJson(items: Array(items.prefix(10))).json
     }
 }

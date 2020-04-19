@@ -24,10 +24,10 @@ extension URLSession {
         case PATCH
     }
 
-    func authedRequest(path: String, method: URLSession.Methods, completionHandler: @escaping AuthedRequestResponse) {
+    func authedRequest(path: String, method: URLSession.Methods, body: Data? = nil, completionHandler: @escaping AuthedRequestResponse) {
         let username = "kfdm"
         let password = try! Settings.keychain.get(username)!
-        authedRequest(path: path, method: method, username: username, password: password, completionHandler: completionHandler)
+        authedRequest(path: path, method: method, body: body, username: username, password: password, completionHandler: completionHandler)
     }
 
     func authedRequest(path: String, method: URLSession.Methods, body: Data? = nil, queryItems: [URLQueryItem]? = [], username: String, password: String, completionHandler: @escaping AuthedRequestResponse) {
@@ -60,7 +60,7 @@ extension URLSession {
         let task = dataTask(with: request, completionHandler: {data, response, error -> Void in
             if let httpResponse = response as? HTTPURLResponse {
                 os_log("Request: %s %s %d", log: .networking, type: .debug, method.rawValue, httpResponse.url!.absoluteString, httpResponse.statusCode)
-        
+
                 switch httpResponse.statusCode {
                 case 200...299:
                     completionHandler(.success(data!))
