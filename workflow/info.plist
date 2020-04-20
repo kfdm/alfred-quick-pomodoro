@@ -4,8 +4,6 @@
 <dict>
 	<key>bundleid</key>
 	<string>net.kungfudiscomonkey.alfred-timebox</string>
-	<key>category</key>
-	<string>Productivity</string>
 	<key>connections</key>
 	<dict>
 		<key>48817261-F349-4158-91DA-64D429A282ED</key>
@@ -231,7 +229,7 @@ exec ./pomodoro projects</string>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>keyword</key>
-				<string>pomodoro</string>
+				<string>focus</string>
 				<key>subtext</key>
 				<string></string>
 				<key>text</key>
