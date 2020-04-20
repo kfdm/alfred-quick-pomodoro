@@ -9,7 +9,7 @@ import SwiftCLI
 
 class SemaphoreCommand {
     let sema = DispatchSemaphore(value: 0)
-    
+
     open func executeSemaphore() throws {}
 
     func execute() throws {

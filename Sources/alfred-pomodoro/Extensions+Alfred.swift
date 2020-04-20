@@ -17,7 +17,7 @@ struct AlfredRow: Codable {
 }
 
 extension AlfredRow {
-    init (title: String, date: Date, icon: AlfredIcon? = nil) {
+    init(title: String, date: Date, icon: AlfredIcon? = nil) {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd"
 

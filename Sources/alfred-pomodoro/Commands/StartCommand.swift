@@ -10,10 +10,10 @@ import SwiftCLI
 class StartCommand: SemaphoreCommand, Command {
     let name = "start"
 
-    @Key("-d", "--duration", description: "How long of a sprint")
+    @Key("-d","--duration",description:"How long of a sprint")
     var duration: Int?
 
-    @Key("-p", "--project", description: "Project ID")
+    @Key("-p","--project",description:"Project ID")
     var project: String?
 
     @CollectedParam var message: [String]

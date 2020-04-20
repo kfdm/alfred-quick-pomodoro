@@ -6,8 +6,8 @@
 //  Copyright © 2019 Paul Traylor. All rights reserved.
 //
 
-import os
 import Foundation
+import os
 
 extension OSLog {
     static let favorites = OSLog.init(subsystem: Settings.identifier, category: "Favorites")

@@ -6,8 +6,8 @@
 //  Copyright © 2020 Paul Traylor. All rights reserved.
 //
 
-import os
 import Foundation
+import os
 
 typealias AuthedRequestResponse = ((Result<Data, Error>) -> Void)
 

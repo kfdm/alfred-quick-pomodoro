@@ -5,8 +5,8 @@ update:
 	swift package update
 	swift package generate-xcodeproj
 
-lint:
-	swiftlint autocorrect Sources
+format:
+	swift-format format -ir Package.swift Sources 
 
 release:
 	swift build -c release
