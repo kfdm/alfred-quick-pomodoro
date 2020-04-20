@@ -25,8 +25,8 @@ extension URLSession {
     }
 
     func authedRequest(path: String, method: URLSession.Methods, body: Data? = nil, completionHandler: @escaping AuthedRequestResponse) {
-        let username = "kfdm"
-        let password = try! Settings.keychain.get(username)!
+        let username = Settings.username
+        let password = Settings.password
         authedRequest(path: path, method: method, body: body, username: username, password: password, completionHandler: completionHandler)
     }
 

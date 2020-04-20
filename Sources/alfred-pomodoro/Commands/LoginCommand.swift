@@ -17,6 +17,7 @@ class LoginCommand: Command {
 
     func execute() throws {
         stdout <<< "Setting password for \(username)"
-        Settings.keychain[username] = password
+        Settings.username = username
+        Settings.password = password
     }
 }
