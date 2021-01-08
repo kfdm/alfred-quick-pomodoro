@@ -153,7 +153,7 @@
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string>trigger.py</string>
+				<string>.venv/bin/timebox-trigger</string>
 				<key>type</key>
 				<integer>8</integer>
 			</dict>
@@ -190,6 +190,10 @@
 			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -215,7 +219,7 @@ python favorites.py
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string>cached.py</string>
+				<string>.venv/bin/timebox-cached</string>
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
@@ -230,12 +234,16 @@ python favorites.py
 			<key>uid</key>
 			<string>7B1A83CE-AC23-4A26-9759-F4935C9A2139</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
 				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
 				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
@@ -262,7 +270,7 @@ python favorites.py
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string>favorites.py</string>
+				<string>.venv/bin/timebox-favorites</string>
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
@@ -277,7 +285,7 @@ python favorites.py
 			<key>uid</key>
 			<string>A0B57A63-342E-4718-97F2-BB1E13009355</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
