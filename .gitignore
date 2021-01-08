@@ -2,3 +2,5 @@
 *.pyc
 
 *.alfredworkflow
+.venv
+*.egg-info

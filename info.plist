@@ -6,11 +6,11 @@
 	<string>net.kungfudiscomonkey.alfred.quickpomodoro</string>
 	<key>connections</key>
 	<dict>
-		<key>15F091E1-0C42-4D22-B10C-1584889CEA94</key>
+		<key>090E4E1E-2457-440E-B7BF-4BF5AB9DAD3B</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>720C961F-F581-4891-9B3C-4881B4C718B5</string>
+				<string>46032089-4844-4D9F-A97F-419B9B407CC5</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -19,50 +19,24 @@
 				<false/>
 			</dict>
 		</array>
-		<key>214D77F1-761C-4BBB-8D70-6F43D896BF23</key>
+		<key>0EDBEA1D-9C0F-4D56-8A70-9951EDAA78BB</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F4238830-96DB-4E57-B23D-FDEBF6AE83ED</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>46032089-4844-4D9F-A97F-419B9B407CC5</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>1A723280-E50D-482A-AAFE-CC094BE24865</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>253899C4-9EA1-4677-82CB-B1AFE0E46A06</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>214D77F1-761C-4BBB-8D70-6F43D896BF23</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>2F85F248-9822-4DDA-B37A-11B91B5CE40E</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>253899C4-9EA1-4677-82CB-B1AFE0E46A06</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>720C961F-F581-4891-9B3C-4881B4C718B5</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>214D77F1-761C-4BBB-8D70-6F43D896BF23</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -130,40 +104,69 @@
 				<false/>
 			</dict>
 		</array>
+		<key>BBA02501-64C7-4E02-8C52-362F59F5839C</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F5A2E519-40ED-49C2-A4A0-D3D62779F243</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>C07157C9-5004-48D6-A479-6464113DD210</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>090E4E1E-2457-440E-B7BF-4BF5AB9DAD3B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>F4238830-96DB-4E57-B23D-FDEBF6AE83ED</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C07157C9-5004-48D6-A479-6464113DD210</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>F5A2E519-40ED-49C2-A4A0-D3D62779F243</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C07157C9-5004-48D6-A479-6464113DD210</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 	</dict>
 	<key>createdby</key>
 	<string>Paul Traylor</string>
 	<key>description</key>
-	<string></string>
+	<string>Timebox for timemanagement</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Quick Pomodoro</string>
+	<string>Timebox</string>
 	<key>objects</key>
 	<array>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string></string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>trigger.py</string>
-				<key>type</key>
-				<integer>8</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>AD307BCB-BCAE-4F9D-94A7-74ACAA50C745</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -190,6 +193,10 @@
 			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -215,7 +222,7 @@ python favorites.py
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string>cached.py</string>
+				<string>.venv/bin/timebox-cached</string>
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
@@ -230,12 +237,39 @@ python favorites.py
 			<key>uid</key>
 			<string>7B1A83CE-AC23-4A26-9759-F4935C9A2139</string>
 			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>.venv/bin/timebox-trigger</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>AD307BCB-BCAE-4F9D-94A7-74ACAA50C745</string>
+			<key>version</key>
 			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
 				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
 				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
@@ -262,7 +296,7 @@ python favorites.py
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string>favorites.py</string>
+				<string>.venv/bin/timebox-favorites</string>
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
@@ -277,7 +311,7 @@ python favorites.py
 			<key>uid</key>
 			<string>A0B57A63-342E-4718-97F2-BB1E13009355</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -305,64 +339,23 @@ python favorites.py
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>keyword</key>
-				<string>pomodoro</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>New Pomodoro</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>2F85F248-9822-4DDA-B37A-11B91B5CE40E</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>json</key>
-				<string>{
-  "alfredworkflow" : {
-    "arg" : "{query}",
-    "variables" : {
-      "duration" : 25
-    }
-  }
-}</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.json</string>
-			<key>uid</key>
-			<string>253899C4-9EA1-4677-82CB-B1AFE0E46A06</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
-				<integer>0</integer>
+				<integer>102</integer>
 				<key>script</key>
-				<string></string>
+				<string>./pomodoro start {query}</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string>parse.py</string>
+				<string>.venv/bin/timebox-start</string>
 				<key>type</key>
 				<integer>8</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>214D77F1-761C-4BBB-8D70-6F43D896BF23</string>
+			<string>46032089-4844-4D9F-A97F-419B9B407CC5</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -376,34 +369,145 @@ python favorites.py
 				<key>subtext</key>
 				<string></string>
 				<key>text</key>
-				<string>New Pomodoro</string>
+				<string>Do a 1 hour sprint</string>
 				<key>withspace</key>
 				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>15F091E1-0C42-4D22-B10C-1584889CEA94</string>
+			<string>BBA02501-64C7-4E02-8C52-362F59F5839C</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>json</key>
-				<string>{
-  "alfredworkflow" : {
-    "arg" : "{query}",
-    "variables" : {
-      "duration" : 60
-    }
-  }
-}</string>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>1</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>query=$1
+
+exec ./pomodoro projects</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>.venv/bin/timebox-projects</string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string></string>
+				<key>type</key>
+				<integer>8</integer>
+				<key>withspace</key>
+				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.json</string>
+			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>720C961F-F581-4891-9B3C-4881B4C718B5</string>
+			<string>C07157C9-5004-48D6-A479-6464113DD210</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>--project {query} --duration {var:duration} {var:message}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>090E4E1E-2457-440E-B7BF-4BF5AB9DAD3B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>duration</key>
+					<string>60</string>
+					<key>message</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>F5A2E519-40ED-49C2-A4A0-D3D62779F243</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>focus</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Do a default Pomodoro</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>0EDBEA1D-9C0F-4D56-8A70-9951EDAA78BB</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>duration</key>
+					<string>25</string>
+					<key>message</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>F4238830-96DB-4E57-B23D-FDEBF6AE83ED</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -412,77 +516,93 @@ python favorites.py
 	<string></string>
 	<key>uidata</key>
 	<dict>
-		<key>15F091E1-0C42-4D22-B10C-1584889CEA94</key>
+		<key>090E4E1E-2457-440E-B7BF-4BF5AB9DAD3B</key>
 		<dict>
 			<key>xpos</key>
-			<integer>310</integer>
+			<integer>430</integer>
+			<key>ypos</key>
+			<integer>305</integer>
+		</dict>
+		<key>0EDBEA1D-9C0F-4D56-8A70-9951EDAA78BB</key>
+		<dict>
+			<key>xpos</key>
+			<integer>50</integer>
 			<key>ypos</key>
 			<integer>390</integer>
 		</dict>
 		<key>1A723280-E50D-482A-AAFE-CC094BE24865</key>
 		<dict>
 			<key>xpos</key>
-			<integer>740</integer>
+			<integer>675</integer>
 			<key>ypos</key>
 			<integer>20</integer>
 		</dict>
-		<key>214D77F1-761C-4BBB-8D70-6F43D896BF23</key>
-		<dict>
-			<key>xpos</key>
-			<integer>550</integer>
-			<key>ypos</key>
-			<integer>330</integer>
-		</dict>
-		<key>253899C4-9EA1-4677-82CB-B1AFE0E46A06</key>
-		<dict>
-			<key>xpos</key>
-			<integer>460</integer>
-			<key>ypos</key>
-			<integer>300</integer>
-		</dict>
-		<key>2F85F248-9822-4DDA-B37A-11B91B5CE40E</key>
-		<dict>
-			<key>xpos</key>
-			<integer>310</integer>
-			<key>ypos</key>
-			<integer>270</integer>
-		</dict>
-		<key>64FC7EF8-ADF0-4824-823E-BE7AACB64082</key>
+		<key>46032089-4844-4D9F-A97F-419B9B407CC5</key>
 		<dict>
 			<key>xpos</key>
 			<integer>500</integer>
 			<key>ypos</key>
-			<integer>140</integer>
+			<integer>275</integer>
 		</dict>
-		<key>720C961F-F581-4891-9B3C-4881B4C718B5</key>
+		<key>64FC7EF8-ADF0-4824-823E-BE7AACB64082</key>
 		<dict>
 			<key>xpos</key>
-			<integer>460</integer>
+			<integer>275</integer>
 			<key>ypos</key>
-			<integer>420</integer>
+			<integer>140</integer>
 		</dict>
 		<key>7B1A83CE-AC23-4A26-9759-F4935C9A2139</key>
 		<dict>
 			<key>xpos</key>
-			<integer>310</integer>
+			<integer>50</integer>
 			<key>ypos</key>
 			<integer>20</integer>
 		</dict>
 		<key>A0B57A63-342E-4718-97F2-BB1E13009355</key>
 		<dict>
 			<key>xpos</key>
-			<integer>310</integer>
+			<integer>50</integer>
 			<key>ypos</key>
 			<integer>140</integer>
 		</dict>
 		<key>AD307BCB-BCAE-4F9D-94A7-74ACAA50C745</key>
 		<dict>
 			<key>xpos</key>
-			<integer>500</integer>
+			<integer>275</integer>
 			<key>ypos</key>
 			<integer>20</integer>
 		</dict>
+		<key>BBA02501-64C7-4E02-8C52-362F59F5839C</key>
+		<dict>
+			<key>xpos</key>
+			<integer>50</integer>
+			<key>ypos</key>
+			<integer>275</integer>
+		</dict>
+		<key>C07157C9-5004-48D6-A479-6464113DD210</key>
+		<dict>
+			<key>xpos</key>
+			<integer>275</integer>
+			<key>ypos</key>
+			<integer>275</integer>
+		</dict>
+		<key>F4238830-96DB-4E57-B23D-FDEBF6AE83ED</key>
+		<dict>
+			<key>xpos</key>
+			<integer>200</integer>
+			<key>ypos</key>
+			<integer>420</integer>
+		</dict>
+		<key>F5A2E519-40ED-49C2-A4A0-D3D62779F243</key>
+		<dict>
+			<key>xpos</key>
+			<integer>200</integer>
+			<key>ypos</key>
+			<integer>305</integer>
+		</dict>
 	</dict>
+	<key>version</key>
+	<string>0.0.3</string>
 	<key>webaddress</key>
 	<string>http://kungfudiscomonkey.net</string>
 </dict>
