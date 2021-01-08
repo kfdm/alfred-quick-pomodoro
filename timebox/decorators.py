@@ -3,13 +3,15 @@ import logging
 import sys
 import time
 
+from timebox.encoder import encoder
+
 logger = logging.getLogger(__name__)
 
 
 def jsonfilter(func):
     def inner():
         start = time.time()
-        json.dump(({"items": list(func())}), fp=sys.stdout)
+        json.dump(({"items": list(func())}), fp=sys.stdout, default=encoder)
         end = time.time()
         logger.debug("Script took %s", end - start)
 

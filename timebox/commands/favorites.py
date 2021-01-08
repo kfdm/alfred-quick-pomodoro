@@ -10,7 +10,7 @@ logger = logging.getLogger(__name__)
 
 def icon(favorite):
     path = settings.WORKFLOW_CACHE / favorite["title"]
-    logger.info("Looking up icon: %s", path)
+    logger.debug("Looking up icon: %s", path)
     if path.exists():
         return path
     if "icon" in favorite and favorite["icon"]:
@@ -35,7 +35,7 @@ def process(favorites):
                 favorite["count"],
             ),
             "arg": favorite["id"],
-            "icon": {"path": str(icon(favorite))},
+            "icon": {"path": icon(favorite)},
             "mods": {
                 "cmd": {
                     "arg": u'tell application "Pomodoro" to start "{title} #{category}" duration {duration}'.format(
@@ -54,7 +54,7 @@ def fetch():
     )
     response.raise_for_status()
     data = response.json()["results"]
-    with (settings.ALFRED_CACHE / "response.json").open("w", encoding="utf8") as fp:
+    with (settings.WORKFLOW_CACHE / "response.json").open("w", encoding="utf8") as fp:
         json.dump(data, fp)
 
     yield from process(data)
@@ -62,7 +62,7 @@ def fetch():
 
 @decorators.jsonfilter
 def cached():
-    with (settings.ALFRED_CACHE / "response.json").open("r", encoding="utf8") as fp:
+    with (settings.WORKFLOW_CACHE / "response.json").open("r", encoding="utf8") as fp:
         data = json.load(fp)
 
     yield from process(data)

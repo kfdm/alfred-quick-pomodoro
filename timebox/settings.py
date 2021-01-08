@@ -5,7 +5,7 @@ import logging
 
 # Alfred Defaults
 LIBRARY = pathlib.Path().home() / "Library"
-ALFRED_CACHE = LIBRARY / "Caches" / "com.runningwithcrayons.Alfred"
+ALFRED_CACHE = LIBRARY / "Caches" / "com.runningwithcrayons.Alfred" / "Workflow Data"
 ALFRED_DATA = LIBRARY / "Application Support" / "Alfred" / "Workflow Data"
 
 # System Default
