@@ -8,6 +8,7 @@ setup(
             "timebox-favorites = timebox.commands.favorites:main",
             "timebox-projects = timebox.commands.projects:main",
             "timebox-trigger = timebox.commands.trigger:main",
+            "timebox-start = timebox.commands.start:main",
         ],
     },
 )
