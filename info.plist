@@ -32,6 +32,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>46032089-4844-4D9F-A97F-419B9B407CC5</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>1A723280-E50D-482A-AAFE-CC094BE24865</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>7B1A83CE-AC23-4A26-9759-F4935C9A2139</key>
 		<array>
 			<dict>

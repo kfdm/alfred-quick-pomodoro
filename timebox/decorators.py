@@ -14,3 +14,13 @@ def jsonfilter(func):
         logger.debug("Script took %s", end - start)
 
     return inner
+
+
+def args(func):
+    def inner():
+        start = time.time()
+        func(sys.argv[1].split(' '))
+        end = time.time()
+        logger.debug("Script took %s", end - start)
+
+    return inner
