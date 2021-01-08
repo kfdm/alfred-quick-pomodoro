@@ -1,18 +1,22 @@
-#!/usr/bin/env python
-# encoding: utf-8
+import logging
 
-import datetime
-import json
-import os
-import sys
+import requests
+from timebox import auth, decorators, settings
 
-import workflow
+logger = logging.getLogger(__name__)
 
 
-def main(wf):
-    response = []
-    response.append({'test'})
-    print(json.dumps({'items': response}))
-
-if __name__ == u'__main__':
-    sys.exit(workflow.Workflow().run(main))
+@decorators.jsonfilter
+def main():
+    response = requests.get(
+        settings.API_BASE + "/project", auth=auth.TokenAuth(settings.API_KEY)
+    )
+    response.raise_for_status()
+    for p in response.json().get("results", []):
+        logger.debug("%s", p)
+        yield {
+            "uid": p["id"],
+            "title": p["name"],
+            "arg": p["id"],
+            "autocomplete": p["name"],
+        }

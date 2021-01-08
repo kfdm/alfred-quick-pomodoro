@@ -11,4 +11,5 @@ setup(
             "timebox-start = timebox.commands.start:main",
         ],
     },
+    install_requires=["keyring", "requests"],
 )
