@@ -20,7 +20,7 @@ def main(args):
     start = datetime.datetime.now()
     end = start + datetime.timedelta(minutes=args.duration)
 
-    r = requests.post(
+    return requests.post(
         settings.API_BASE + "/pomodoro",
         auth=auth.TokenAuth(settings.API_KEY),
         json={
@@ -30,14 +30,3 @@ def main(args):
             "title": args.title,
         },
     )
-
-    if r.ok:
-        print("{title} {end}".format(**r.json()))
-    elif r.status_code == 409:
-        print(
-            "Cannot replace active Pomodoro: {title} {end}".format(
-                status=r.status_code, **r.json()["data"]
-            )
-        )
-    else:
-        print(r.text)

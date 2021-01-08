@@ -1,23 +1,19 @@
+import argparse
 import logging
 import sys
 
 import requests
-from timebox import auth, settings
+from timebox import auth, decorators, settings
 
 logger = logging.getLogger(__name__)
 
 
-def main():
-    url = "{}/favorite/{}/start".format(settings.API_BASE, sys.argv[1])
-    r = requests.post(url, auth=auth.TokenAuth(settings.API_KEY))
+@decorators.args
+def main(args):
+    parser = argparse.ArgumentParser()
+    parser.add_argument("id")
+    args = parser.parse_args(args)
+    logger.debug("%s", args)
 
-    if r.ok:
-        print("{title} {end}".format(**r.json()))
-    elif r.status_code == 409:
-        print(
-            "Cannot replace active Pomodoro: {title} {end}".format(
-                status=r.status_code, **r.json()["data"]
-            )
-        )
-    else:
-        print(r.text)
+    url = "{}/favorite/{}/start".format(settings.API_BASE, args.id)
+    return requests.post(url, auth=auth.TokenAuth(settings.API_KEY))
