@@ -160,11 +160,11 @@
 	<key>createdby</key>
 	<string>Paul Traylor</string>
 	<key>description</key>
-	<string></string>
+	<string>Timebox for timemanagement</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Quick Pomodoro</string>
+	<string>Timebox</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -601,6 +601,8 @@ exec ./pomodoro projects</string>
 			<integer>305</integer>
 		</dict>
 	</dict>
+	<key>version</key>
+	<string>0.0.3</string>
 	<key>webaddress</key>
 	<string>http://kungfudiscomonkey.net</string>
 </dict>
