@@ -26,9 +26,18 @@ if "alfred_workflow_data" in os.environ:
 else:
     WORKFLOW_DIR = ALFRED_DATA / BUNDLE_ID
 
+if "alfred_workflow_cache" in os.environ:
+    WORKFLOW_CACHE = pathlib.Path(os.environ["alfred_workflow_cache"])
+else:
+    WORKFLOW_CACHE = ALFRED_CACHE / BUNDLE_ID
+
+
 with (WORKFLOW_DIR / "settings.json").open() as fp:
     SETTINGS = json.load(fp)
 
 API_KEY = SETTINGS.get("API_KEY")
 API_BASE = SETTINGS.setdefault("API_ENDPOINT", "https://tsundere.co/api")
 USER_AGENT = "alfred/{}/{}".format(ALFRED_VERSION, BUNDLE_ID)
+ICON_ROOT = pathlib.Path(
+    "/System/Library/CoreServices/CoreTypes.bundle/Contents/Resources"
+)

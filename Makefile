@@ -11,5 +11,14 @@ $(PIP_BIN):
 projects: ${PIP_BIN}
 	.venv/bin/timebox-projects
 
+.PHONY: cached
+cached: ${PIP_BIN}
+	.venv/bin/timebox-cached
+
+.PHONY: favorites
+favorites: ${PIP_BIN}
+	.venv/bin/timebox-favorites
+
+
 clean:
 	rm -rf .venv

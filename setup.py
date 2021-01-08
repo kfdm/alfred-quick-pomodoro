@@ -4,8 +4,8 @@ setup(
     name="alfred-timebox",
     entry_points={
         "console_scripts": [
-            "timebox-cached = timebox.commands.cached:main",
-            "timebox-favorites = timebox.commands.favorites:main",
+            "timebox-cached = timebox.commands.favorites:cached",
+            "timebox-favorites = timebox.commands.favorites:fetch",
             "timebox-projects = timebox.commands.projects:main",
             "timebox-trigger = timebox.commands.trigger:main",
             "timebox-start = timebox.commands.start:main",

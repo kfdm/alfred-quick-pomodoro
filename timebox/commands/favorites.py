@@ -1,53 +1,68 @@
-#!/usr/bin/env python
-# encoding: utf-8
-
 import datetime
 import json
-import os
-import sys
+import logging
 
-import workflow
-import workflow.web as web
+import requests
+from timebox import auth, decorators, settings
 
-FAVORITES_URL = 'https://tsundere.co/api/favorite?format=json'
+logger = logging.getLogger(__name__)
 
 
-def main(wf):
-    response = []
-    params = dict(count=20, format='json')
-    headers = {'Authorization': 'Token %s' % wf.settings['API_KEY']}
-    r = workflow.web.get(FAVORITES_URL, params, headers)
-    r.raise_for_status()
+def icon(favorite):
+    path = settings.WORKFLOW_CACHE / favorite["title"]
+    logger.info("Looking up icon: %s", path)
+    if path.exists():
+        return path
+    if "icon" in favorite and favorite["icon"]:
+        # Cache icon
+        logging.debug("Downloading: %s", favorite["icon"])
+        response = requests.get(favorite["icon"])
+        if response.ok:
+            with path.open("wb") as fp:
+                fp.write(response.content)
+            return path
+    return settings.ICON_ROOT / "Clock.icns"
 
-    with open(wf.cachefile('response.json'), 'wb') as fp:
-        fp.write(r.text.encode('utf8', 'ignore'))
 
-    for favorite in sorted(json.loads(r.text)['results'], key=lambda f: f['count'], reverse=True):
-        icon = wf.cachefile(favorite['title'])
-        if os.path.exists(icon) is False:
-            if favorite['icon']:
-                request = web.get(favorite['icon'])
-                request.save_to_path(icon)
-            else:
-                icon = workflow.ICON_CLOCK
-        response.append({
-            'uid': favorite['id'],
-            'title': favorite['title'],
-            'subtitle': u'{} {} [{}]'.format(
-                favorite['category'],
-                datetime.timedelta(minutes=favorite['duration']),
-                favorite['count'],
-                ),
-            'arg': favorite['id'],
-            'icon': {'path': icon},
-            'mods': {
-                'cmd': {
-                    'arg': u'tell application "Pomodoro" to start "{title} #{category}" duration {duration}'.format(**favorite),
-                    'subtitle': 'Launch with Pomodoro.app'
+def process(favorites):
+    for favorite in sorted(favorites, key=lambda f: f["count"], reverse=True):
+        yield {
+            "uid": favorite["id"],
+            "title": favorite["title"],
+            "subtitle": u"{} {} [{}]".format(
+                favorite["project"]["name"],
+                datetime.timedelta(minutes=favorite["duration"]),
+                favorite["count"],
+            ),
+            "arg": favorite["id"],
+            "icon": {"path": str(icon(favorite))},
+            "mods": {
+                "cmd": {
+                    "arg": u'tell application "Pomodoro" to start "{title} #{category}" duration {duration}'.format(
+                        **favorite
+                    ),
+                    "subtitle": "Launch with Pomodoro.app",
                 }
-            }
-        })
-    print(json.dumps({'items': response}))
+            },
+        }
 
-if __name__ == u'__main__':
-    sys.exit(workflow.Workflow().run(main))
+
+@decorators.jsonfilter
+def fetch():
+    response = requests.get(
+        settings.API_BASE + "/favorite", auth=auth.TokenAuth(settings.API_KEY)
+    )
+    response.raise_for_status()
+    data = response.json()["results"]
+    with (settings.ALFRED_CACHE / "response.json").open("w", encoding="utf8") as fp:
+        json.dump(data, fp)
+
+    yield from process(data)
+
+
+@decorators.jsonfilter
+def cached():
+    with (settings.ALFRED_CACHE / "response.json").open("r", encoding="utf8") as fp:
+        data = json.load(fp)
+
+    yield from process(data)
