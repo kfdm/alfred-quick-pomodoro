@@ -13,7 +13,7 @@ def main(args):
     parser = argparse.ArgumentParser()
     parser.add_argument("--project")
     parser.add_argument("--duration", type=int)
-    parser.add_argument("title")
+    parser.add_argument("title", nargs="+")
     args = parser.parse_args(args)
     logger.debug("%s", args)
 
@@ -27,6 +27,6 @@ def main(args):
             "project": args.project,
             "start": start.isoformat(),
             "end": end.isoformat(),
-            "title": args.title,
+            "title": " ".join(args.title),
         },
     )
