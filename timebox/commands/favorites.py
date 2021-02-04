@@ -8,12 +8,12 @@ from timebox import auth, decorators, settings
 logger = logging.getLogger(__name__)
 
 
-def icon(favorite):
+def icon(favorite, fetch):
     path = settings.WORKFLOW_CACHE / favorite["title"]
     logger.debug("Looking up icon: %s", path)
     if path.exists():
         return path
-    if "icon" in favorite and favorite["icon"]:
+    if "icon" in favorite and favorite["icon"] and fetch:
         # Cache icon
         logging.debug("Downloading: %s", favorite["icon"])
         response = requests.get(favorite["icon"])
@@ -24,7 +24,7 @@ def icon(favorite):
     return settings.ICON_ROOT / "Clock.icns"
 
 
-def process(favorites):
+def process(favorites, fetch):
     for favorite in sorted(favorites, key=lambda f: f["count"], reverse=True):
         yield {
             "uid": favorite["id"],
@@ -35,7 +35,7 @@ def process(favorites):
                 favorite["count"],
             ),
             "arg": favorite["id"],
-            "icon": {"path": icon(favorite)},
+            "icon": {"path": icon(favorite, fetch)},
             "mods": {
                 "cmd": {
                     "arg": u'tell application "Pomodoro" to start "{title} #{category}" duration {duration}'.format(
@@ -57,7 +57,7 @@ def fetch():
     with (settings.WORKFLOW_CACHE / "response.json").open("w", encoding="utf8") as fp:
         json.dump(data, fp)
 
-    yield from process(data)
+    yield from process(data, True)
 
 
 @decorators.jsonfilter
@@ -65,4 +65,4 @@ def cached():
     with (settings.WORKFLOW_CACHE / "response.json").open("r", encoding="utf8") as fp:
         data = json.load(fp)
 
-    yield from process(data)
+    yield from process(data, False)
