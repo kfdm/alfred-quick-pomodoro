@@ -54,6 +54,11 @@ def fetch():
     )
     response.raise_for_status()
     data = response.json()["results"]
+
+    if not settings.WORKFLOW_CACHE.exists():
+        logger.debug("Creating cache directory %s", settings.WORKFLOW_CACHE)
+        settings.WORKFLOW_CACHE.mkdir(parents=True)
+
     with (settings.WORKFLOW_CACHE / "response.json").open("w", encoding="utf8") as fp:
         json.dump(data, fp)
 
@@ -62,6 +67,10 @@ def fetch():
 
 @decorators.jsonfilter
 def cached():
+    if not settings.WORKFLOW_CACHE.exists():
+        logger.debug("Creating cache directory %s", settings.WORKFLOW_CACHE)
+        settings.WORKFLOW_CACHE.mkdir(parents=True)
+
     with (settings.WORKFLOW_CACHE / "response.json").open("r", encoding="utf8") as fp:
         data = json.load(fp)
 
