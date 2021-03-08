@@ -16,7 +16,7 @@ def icon(favorite, fetch):
     if "icon" in favorite and favorite["icon"] and fetch:
         # Cache icon
         logging.debug("Downloading: %s", favorite["icon"])
-        response = requests.get(favorite["icon"])
+        response = requests.get(favorite["icon"], auth=auth.TokenAuth(settings.API_KEY))
         if response.ok:
             with path.open("wb") as fp:
                 fp.write(response.content)
