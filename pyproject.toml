@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "alfred-timebox"
+version = "0.0.0"
+dependencies = ["keyring", "requests"]
+requires-python = ">=3.9"
+
+[project.scripts]
+timebox-cached = "timebox.commands.favorites:cached"
+timebox-favorites = "timebox.commands.favorites:fetch"
+timebox-projects = "timebox.commands.projects:main"
+timebox-trigger = "timebox.commands.trigger:main"
+timebox-start = "timebox.commands.start:main"

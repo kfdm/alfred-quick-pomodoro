@@ -601,9 +601,11 @@ exec ./pomodoro projects</string>
 			<integer>305</integer>
 		</dict>
 	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
 	<key>version</key>
 	<string>0.0.3</string>
 	<key>webaddress</key>
-	<string>http://kungfudiscomonkey.net</string>
+	<string>https://paultraylor.net/tags/alfred/</string>
 </dict>
 </plist>
