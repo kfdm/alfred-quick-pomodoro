@@ -3,6 +3,7 @@ import json
 import logging
 
 import requests
+
 from timebox import auth, decorators, settings
 
 logger = logging.getLogger(__name__)
@@ -15,7 +16,7 @@ def icon(favorite, fetch):
         return path
     if "icon" in favorite and favorite["icon"] and fetch:
         # Cache icon
-        logging.debug("Downloading: %s", favorite["icon"])
+        logger.debug("Downloading: %s", favorite["icon"])
         response = requests.get(favorite["icon"])
         if response.ok:
             with path.open("wb") as fp:
@@ -29,7 +30,7 @@ def process(favorites, fetch):
         yield {
             "uid": favorite["id"],
             "title": favorite["title"],
-            "subtitle": u"{} {} [{}]".format(
+            "subtitle": "{} {} [{}]".format(
                 favorite["project"]["name"],
                 datetime.timedelta(minutes=favorite["duration"]),
                 favorite["count"],
@@ -38,7 +39,7 @@ def process(favorites, fetch):
             "icon": {"path": icon(favorite, fetch)},
             "mods": {
                 "cmd": {
-                    "arg": u'tell application "Pomodoro" to start "{title} #{category}" duration {duration}'.format(
+                    "arg": 'tell application "Pomodoro" to start "{title} #{category}" duration {duration}'.format(
                         **favorite
                     ),
                     "subtitle": "Launch with Pomodoro.app",

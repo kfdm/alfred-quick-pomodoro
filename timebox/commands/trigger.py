@@ -1,8 +1,8 @@
 import argparse
 import logging
-import sys
 
 import requests
+
 from timebox import auth, decorators, settings
 
 logger = logging.getLogger(__name__)
@@ -15,5 +15,5 @@ def main(args):
     args = parser.parse_args(args)
     logger.debug("%s", args)
 
-    url = "{}/favorite/{}/start".format(settings.API_BASE, args.id)
+    url = f"{settings.API_BASE}/favorite/{args.id}/start"
     return requests.post(url, auth=auth.TokenAuth(settings.API_KEY))

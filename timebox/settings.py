@@ -1,7 +1,7 @@
-import os
-import pathlib
 import json
 import logging
+import os
+import pathlib
 
 # Alfred Defaults
 LIBRARY = pathlib.Path().home() / "Library"
@@ -45,4 +45,4 @@ with (WORKFLOW_DIR / "settings.json").open() as fp:
 
 API_KEY = SETTINGS.get("API_KEY")
 API_BASE = SETTINGS.setdefault("API_ENDPOINT", "https://tsundere.co/api")
-USER_AGENT = "alfred/{}/{}".format(ALFRED_VERSION, BUNDLE_ID)
+USER_AGENT = f"alfred/{ALFRED_VERSION}/{BUNDLE_ID}"

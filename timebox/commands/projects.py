@@ -1,6 +1,7 @@
 import logging
 
 import requests
+
 from timebox import auth, decorators, settings
 
 logger = logging.getLogger(__name__)
