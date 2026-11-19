@@ -9,9 +9,7 @@ logger = logging.getLogger(__name__)
 
 @decorators.jsonfilter
 def main():
-    response = requests.get(
-        settings.API_BASE + "/project", auth=auth.TokenAuth(settings.API_KEY)
-    )
+    response = requests.get(settings.API_BASE + "/project", auth=auth.TokenAuth(settings.API_KEY))
     response.raise_for_status()
     for p in response.json().get("results", []):
         logger.debug("%s", p)

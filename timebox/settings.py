@@ -9,9 +9,7 @@ ALFRED_CACHE = LIBRARY / "Caches" / "com.runningwithcrayons.Alfred" / "Workflow 
 ALFRED_DATA = LIBRARY / "Application Support" / "Alfred" / "Workflow Data"
 
 # System Default
-ICON_ROOT = pathlib.Path(
-    "/System/Library/CoreServices/CoreTypes.bundle/Contents/Resources"
-)
+ICON_ROOT = pathlib.Path("/System/Library/CoreServices/CoreTypes.bundle/Contents/Resources")
 
 # Alfred Environment Settings
 
@@ -20,9 +18,7 @@ if os.environ.get("alfred_debug") == "1":
 else:
     logging.basicConfig(level=logging.INFO)
 
-BUNDLE_ID = os.environ.get(
-    "alfred_workflow_bundleid", "net.kungfudiscomonkey.alfred.quickpomodoro"
-)
+BUNDLE_ID = os.environ.get("alfred_workflow_bundleid", "net.kungfudiscomonkey.alfred.quickpomodoro")
 
 ALFRED_VERSION = os.environ.get("alfred_version", "Unknown")
 

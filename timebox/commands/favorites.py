@@ -50,9 +50,7 @@ def process(favorites, fetch):
 
 @decorators.jsonfilter
 def fetch():
-    response = requests.get(
-        settings.API_BASE + "/favorite", auth=auth.TokenAuth(settings.API_KEY)
-    )
+    response = requests.get(settings.API_BASE + "/favorite", auth=auth.TokenAuth(settings.API_KEY))
     response.raise_for_status()
     data = response.json()["results"]
     with (settings.WORKFLOW_CACHE / "response.json").open("w", encoding="utf8") as fp:
