@@ -3,6 +3,8 @@ import logging
 import os
 import pathlib
 
+import keyring
+
 # Alfred Defaults
 LIBRARY = pathlib.Path().home() / "Library"
 ALFRED_CACHE = LIBRARY / "Caches" / "com.runningwithcrayons.Alfred" / "Workflow Data"
@@ -35,10 +37,17 @@ if "alfred_workflow_cache" in os.environ:
 else:
     WORKFLOW_CACHE = ALFRED_CACHE / BUNDLE_ID
 
+WORKFLOW_SETTINGS = WORKFLOW_DIR / "settings.json"
+if WORKFLOW_SETTINGS.exists():
+    with WORKFLOW_SETTINGS.open() as fp:
+        SETTINGS = json.load(fp)
+else:
+    SETTINGS = {}
 
-with (WORKFLOW_DIR / "settings.json").open() as fp:
-    SETTINGS = json.load(fp)
 
 API_KEY = SETTINGS.get("API_KEY")
+if API_KEY is None:
+    API_KEY = keyring.get_password("tsundere.co", "kfdm-token")
+
 API_BASE = SETTINGS.setdefault("API_ENDPOINT", "https://tsundere.co/api")
 USER_AGENT = f"alfred/{ALFRED_VERSION}/{BUNDLE_ID}"

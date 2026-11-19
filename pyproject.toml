@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "alfred-timebox"
 version = "0.0.0"
 dependencies = ["keyring", "requests"]
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 
 [project.scripts]
 timebox-cached = "timebox.commands.favorites:cached"
