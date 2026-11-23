@@ -18,7 +18,7 @@ def main():
     args = parser.parse_args()
     logger.debug("%s", args)
 
-    start = datetime.datetime.now()
+    start = datetime.datetime.now().astimezone()
     end = start + datetime.timedelta(minutes=args.duration)
 
     return requests.post(
