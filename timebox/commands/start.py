@@ -9,13 +9,13 @@ from timebox import auth, decorators, settings
 logger = logging.getLogger(__name__)
 
 
-@decorators.args
-def main(args):
+@decorators.trigger
+def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--project")
-    parser.add_argument("--duration", type=int)
+    parser.add_argument("--duration", type=int, default=25)
     parser.add_argument("title", nargs="+")
-    args = parser.parse_args(args)
+    args = parser.parse_args()
     logger.debug("%s", args)
 
     start = datetime.datetime.now()

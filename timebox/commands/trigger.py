@@ -8,11 +8,11 @@ from timebox import auth, decorators, settings
 logger = logging.getLogger(__name__)
 
 
-@decorators.args
-def main(args):
+@decorators.trigger
+def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("id")
-    args = parser.parse_args(args)
+    args = parser.parse_args()
     logger.debug("%s", args)
 
     url = f"{settings.API_BASE}/favorite/{args.id}/start"

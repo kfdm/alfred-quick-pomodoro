@@ -18,12 +18,10 @@ def jsonfilter(func):
     return inner
 
 
-def args(func):
+def trigger(func):
     def inner():
-        logger.debug("%s", sys.argv)
-
         start = time.time()
-        r = func(sys.argv[1].split(" "))
+        r = func()
         end = time.time()
 
         if r.ok:
